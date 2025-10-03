@@ -180,7 +180,7 @@ desligarCamera.onclick = function() {
 
 if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js')
+                navigator.serviceWorker.register('sw')
                 .then(function(reg){ console.log('Service Worker registrado.', reg); })
                 .catch(function(err){ console.log('Erro ao registrar service worker:', err); });
             });

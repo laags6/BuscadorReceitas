@@ -44,7 +44,7 @@ self.addEventListener('fetch', function(event) {
       }).catch(function() {
         // fallback to cached index.html for navigation requests
         if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match('index');
         }
       });
     })
