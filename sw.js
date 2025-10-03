@@ -1,7 +1,7 @@
 const CACHE_NAME = 'receitas-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
+  'index',
   '/style.css',
   '/script.js',
   '/manifest.json',
@@ -44,7 +44,7 @@ self.addEventListener('fetch', function(event) {
       }).catch(function() {
         // fallback to cached index.html for navigation requests
         if (event.request.mode === 'navigate') {
-          return caches.match('index');
+          return caches.match('index.html');
         }
       });
     })
