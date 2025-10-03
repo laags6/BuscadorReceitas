@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍳Buscador Receitas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ff8462">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+</head>
+<body>
+    <!-- Caixa principal de tudo -->
+    <div class="caixa-principal">
+        
+        <!-- Cabeçalho -->
+        <div class="cabecalho">
+            <h1>🍳Buscador de Receitas</h1>
+            <p>Busque receitas e tire uma foto das suas receitas!</p>
+        </div>
+        
+        <!-- Área para buscar receitas -->
+        <div class="area-busca">
+            <input type="text" id="caixa-texto" placeholder="Ex: pizza, cake, pasta...">
+            <button id="botao-buscar">🔍 Buscar</button>
+        </div>
+        
+        <!-- Aqui vão aparecer as receitas encontradas -->
+        <div id="lista-receitas" class="grade-receitas"></div>
+        
+        <!-- Área da câmera -->
+        <div class="area-camera">
+            <h2>📸 Tire uma foto da sua receita!</h2>
+            <video id="camera" autoplay></video>
+            <canvas id="foto" style="display: none;"></canvas>
+            
+            <div>
+                <button id="ligar-camera" class="botao-camera btn-verde">▶️ Ligar Câmera</button>
+                <button id="tirar-foto" class="botao-camera btn-azul" disabled>📷 Tirar Foto</button>
+                <button id="desligar-camera" class="botao-camera btn-vermelho" disabled>⏹️ Desligar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Janela popup para mostrar detalhes da receita -->
+    <div id="popup" class="janela-popup">
+        <div class="popup-conteudo">
+            <span class="botao-fechar" id="fechar">×</span>
+            <div id="detalhes"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

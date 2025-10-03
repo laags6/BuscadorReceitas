@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+*:focus {
+    outline-color: #2196F3;
+}
+
+.caixa-principal {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #ff8462;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Área de busca */
+.area-busca {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.area-busca input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.area-busca button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff8462;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.area-busca button:focus {
+    transform: scale(1.05);
+    background-color: #ff8462;
+}
+
+.area-busca button:hover {
+    transform: scale(1.05);
+    background-color: #ff8462;
+}
+
+
+/* Grade de receitas */
+.grade-receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Card individual de receita */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-texto {
+    padding: 15px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8462;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card button:focus {
+    transform: scale(1.05);
+}
+
+.card button:hover {
+    transform: scale(1.05);
+}
+
+/* Área da câmera */
+.area-camera {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.area-camera video,
+.area-camera canvas {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.botao-camera {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.botao-camera:focus {
+    transform: scale(1.05);
+}
+
+.botao-camera:hover {
+    transform: scale(1.05);
+}
+
+
+#ligar-camera { background-color: #4cafa7; color: white; }
+#tirar-foto { background-color: #ff8462; color: white; }
+#desligar-camera { background-color: #f44336; color: white; }
+
+/* popup */
+.janela-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow-y: auto;
+}
+
+.popup-conteudo {
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    position: relative;
+}
+
+.botao-fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ingrediente {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 600px) {
+    
+    
+    .area-busca button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff8462;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+}
