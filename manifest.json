@@ -1,7 +1,7 @@
 {
   "name": "Buscador de Receitas",
   "short_name": "Receitas",
-  "start_url": "index",
+  "start_url": ".index.html",
   "scope": ".",
   "display": "standalone",
   "background_color": "#ffffff",

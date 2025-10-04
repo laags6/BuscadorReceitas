@@ -1,7 +1,7 @@
 const CACHE_NAME = 'receitas-cache-v1';
 const urlsToCache = [
   '/',
-  'index',
+  'index.html',
   '/style.css',
   '/script.js',
   '/manifest.json',
